@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="120" viewBox="0 0 500 120">
+  <style><![CDATA[
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@600;700&display=swap');
+    text { font-family: 'Poppins','Inter',sans-serif; }
+  ]]></style>
+
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="6" stdDeviation="1.5" flood-color="rgba(0,0,0,0.25)" />
+    </filter>
+  </defs>
+
+  <!-- Abel -->
+  <text x="20" y="75" font-size="60" font-weight="700" fill="#000000" filter="url(#shadow)" letter-spacing="5">Abel</text>
+
+  <!-- Berhanu (very close spacing) -->
+  <text x="190" y="75" font-size="60" font-weight="700" fill="#7a57db" filter="url(#shadow)" letter-spacing="5">Berhanu</text>
+</svg>

@@ -1,24 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abe Berhanu || Home</title>
 
+    <!-- font-awesome link icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+
     <!-- css -->
-     <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <!-- navbar -->
-     
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav-header -->
+        <div class="nav-header">
+          <img src="./images/logo.svg" class="nav-logo" alt="nav logo" />
+          <button class="nav-btn" id="nav-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- nav links -->
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- end of nav links -->
+      </div>
+    </nav>
     <!-- end of navbar -->
 
     <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
 
+        <!-- nav links -->
+        <ul class="sidebar-links" id="sidebar-links">
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- end of nav links -->
+
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://github.com/Abel-berhanu-git" class="social-icon">
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" class="social-icon">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com" class="social-icon">
+              <i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.squarespace.com" class="social-icon">
+              <i class="fa-brands fa-squarespace"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com" class="social-icon">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+        <!-- end of social icons -->
+      </div>
+    </aside>
     <!-- end of sidebar -->
+    <div class="hero"></div>
     <!-- header -->
 
     <!-- end of header -->
+    <header class="hero">
+      <div class="section-center hero-center">
+        <!-- hero info -->
+        <article class="hero-info">
+          <div class="underline"></div>
+          <h1>i'm abel</h1>
+          <h4>freelance full stack web developer</h4>
+          <a href="contact.html" class="btn hero-btn">hire me</a>
+
+          <!-- social icons -->
+          <ul class="social-icons hero-icons">
+            <li>
+              <a href="https://github.com/Abel-berhanu-git" class="social-icon">
+                <i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" class="social-icon">
+                <i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com" class="social-icon">
+                <i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.squarespace.com" class="social-icon">
+                <i class="fa-brands fa-squarespace"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com" class="social-icon">
+                <i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+          <!-- end of social icons -->
+        </article>
+
+        <!-- hero-img -->
+        <article class="hero-img">
+          <img
+            src="./images/hero-img-large.jpg"
+            alt="abel berahnu"
+            class="hero-photo"
+          />
+        </article>
+      </div>
+    </header>
     <!-- about -->
 
     <!-- end of about -->
@@ -43,5 +180,5 @@
     <!-- footer -->
 
     <script src="./js/app.js"></script>
-</body>
+  </body>
 </html>

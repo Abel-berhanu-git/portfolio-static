@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;800&display=swap');
 
 /*
 =============== 
@@ -12,34 +12,52 @@ Variables
 */
 
 :root {
+  /* ========= Primary (Indigo) ========= */
   /* dark shades of primary color*/
-  --clr-primary-1: hsl(43, 86%, 17%);
-  --clr-primary-2: hsl(43, 77%, 27%);
-  --clr-primary-3: hsl(43, 72%, 37%);
-  --clr-primary-4: hsl(42, 63%, 48%);
+  --clr-primary-1: hsl(256, 45%, 20%);
+  --clr-primary-2: hsl(256, 45%, 30%);
+  --clr-primary-3: #513894;
+  --clr-primary-4: hsl(256, 55%, 50%);
   /* primary/main color */
-  --clr-primary-5: hsl(42, 78%, 60%);
+  --clr-primary-5: #7a57db;
   /* lighter shades of primary color */
-  --clr-primary-6: hsl(43, 89%, 70%);
-  --clr-primary-7: hsl(43, 90%, 76%);
-  --clr-primary-8: hsl(45, 86%, 81%);
-  --clr-primary-9: hsl(45, 90%, 88%);
-  --clr-primary-10: hsl(45, 100%, 96%);
+  --clr-primary-6: hsl(256, 70%, 70%);
+  --clr-primary-7: hsl(256, 80%, 78%);
+  --clr-primary-8: hsl(256, 85%, 86%);
+  --clr-primary-9: hsl(256, 90%, 92%);
+  --clr-primary-10: hsl(256, 100%, 97%);
+
+  /* dark shades of primary color*/
+  --clr-primary-1: #18112c;
+  --clr-primary-2: #312358;
+  --clr-primary-3: #493483;
+  --clr-primary-4: #6246af;
+  /* primary/main color */
+  --clr-primary-5: #7a57db;
+  /* lighter shades of primary color */
+  --clr-primary-6: #8e70e0;
+  --clr-primary-7: #a289e6;
+  --clr-primary-8: #b6a3eb;
+  --clr-primary-9: #cabcf1;
+  --clr-primary-10: #ded5f6;
+
+  /* ========= Greys (Modern Neutral) ========= */
   /* darkest grey - used for headings */
-  --clr-grey-1: hsl(209, 61%, 16%);
-  --clr-grey-2: hsl(211, 39%, 23%);
-  --clr-grey-3: hsl(209, 34%, 30%);
-  --clr-grey-4: hsl(209, 28%, 39%);
+  --clr-grey-1: hsl(210, 30%, 12%); /* headings */
+  --clr-grey-2: hsl(210, 28%, 18%);
+  --clr-grey-3: hsl(210, 25%, 25%);
+  --clr-grey-4: hsl(210, 20%, 35%);
   /* grey used for paragraphs */
-  --clr-grey-5: hsl(210, 22%, 49%);
-  --clr-grey-6: hsl(209, 23%, 60%);
-  --clr-grey-7: hsl(211, 27%, 70%);
-  --clr-grey-8: hsl(210, 31%, 80%);
-  --clr-grey-9: hsl(212, 33%, 89%);
-  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-grey-5: hsl(210, 15%, 45%); /* paragraphs */
+  --clr-grey-6: hsl(210, 20%, 65%);
+  --clr-grey-7: hsl(210, 25%, 75%);
+  --clr-grey-8: hsl(210, 30%, 85%);
+  --clr-grey-9: hsl(210, 35%, 93%);
+  --clr-grey-10: hsl(210, 40%, 97%);
   --clr-white: #fff;
-  --ff-primary: "Roboto", sans-serif;
-  --ff-secondary: "Open Sans", sans-serif;
+  /* ========= Fonts ========= */
+  --ff-primary: 'Inter', sans-serif; /* body */
+  --ff-secondary: 'Poppins', sans-serif; /* headings */
   --transition: all 0.3s linear;
   --ltr-spacing: 0.25rem;
   --radius: 0.5rem;
@@ -165,33 +183,255 @@ p {
   }
 }
 /* added during recording */
-
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
 /*
 =============== 
 Navbar
 ===============
 */
+.nav-links {
+  display: none;
+}
+
+.nav {
+  height: 5rem;
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.nav-center {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 17rem;
+  height: 3.5rem;
+}
+
+.nav-btn {
+  justify-self: end;
+  background: transparent;
+  border-color: transparent;
+  font-size: 2rem;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    background: var(--clr-primary-10);
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .nav-center {
+    /* display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    justify-self: end;
+    column-gap: 2rem; */
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  .nav-links a {
+    text-transform: capitalize;
+    color: var(--clr-grey-1);
+    font-weight: 600;
+    letter-spacing: var(--ltr-spacing);
+    transition: var(--transition);
+  }
+
+  .nav-links a:hover {
+    color: var(--clr-primary-5);
+  }
+}
+
+/* fixed navbar */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  box-shadow: var(--light-shadow);
+  z-index: 2;
+}
 
 /*
 =============== 
 Sidebar
 ===============
 */
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* bottom: 0;
+  right: 0; */
+  width: 100%;
+  height: 100%;
+  background: var(--clr-grey-10);
+  display: grid;
+  place-items: center;
+  transform: translateX(-100%);
+  transition: var(--transition);
+}
 
+.show-sidebar {
+  transform: translateX(0);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border-color: transparent;
+  font-size: 2rem;
+  color: #bb2525;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.close-btn:hover {
+  color: #e66b6b;
+}
+
+.sidebar-links li {
+  text-align: center;
+  padding: 1rem 5rem;
+}
+
+.sidebar-links a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: var(--clr-grey-5);
+  letter-spacing: var(--ltr-spacing);
+  transition: var(--transition);
+}
+
+.sidebar-links a:hover {
+  color: var(--clr-primary-5);
+  transform: scale(1.05);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+}
+
+.social-icon {
+  display: block; /* for scale*/
+  font-size: 1.5rem;
+  color: var(--clr-primary-1);
+  transition: var(--transition);
+}
+
+.social-icon:hover {
+  color: var(--clr-primary-5);
+  transform: scale(1.2);
+}
 /*
 =============== 
 Hero
 ===============
 */
 /* underline added to globals */
+.hero .underline {
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
 
+.hero-img {
+  display: none;
+}
+
+.hero {
+  background: var(--clr-primary-10);
+}
+
+.hero-center {
+  min-height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+}
+
+.hero-info h4 {
+  color: var(--clr-grey-5);
+  margin-bottom: 2rem;
+}
+
+.hero-icons {
+  justify-content: space-between;
+  width: 20rem;
+}
+
+@media screen and (min-width: 992px) {
+  .hero-img {
+    display: block;
+    position: relative;
+  }
+
+  .hero-center {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-img:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.25rem solid var(--clr-primary-5);
+    top: 2rem;
+    right: -2rem;
+    border-radius: var(--radius);
+  }
+
+  .hero-photo {
+    max-width: 25rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: var(--radius);
+    position: relative;
+  }
+}
 /*
 =============== 
 About
 ===============
 */
 /* section title added to globals */
-
 /*
 =============== 
 Services
