@@ -301,7 +301,7 @@ Sidebar
 ===============
 */
 .sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   /* bottom: 0;
@@ -313,6 +313,7 @@ Sidebar
   place-items: center;
   transform: translateX(-100%);
   transition: var(--transition);
+  z-index: 5;
 }
 
 .show-sidebar {
@@ -337,7 +338,7 @@ Sidebar
 
 .sidebar-links li {
   text-align: center;
-  padding: 1rem 5rem;
+  padding: 0.75rem;
 }
 
 .sidebar-links a {
@@ -346,17 +347,21 @@ Sidebar
   text-transform: capitalize;
   color: var(--clr-grey-5);
   letter-spacing: var(--ltr-spacing);
+  padding-left: 1rem;
   transition: var(--transition);
 }
 
 .sidebar-links a:hover {
   color: var(--clr-primary-5);
   transform: scale(1.05);
+  border-left: 2px solid var(--clr-grey-1);
 }
 
 .social-icons {
   display: flex;
   justify-content: space-evenly;
+  width: 20rem;
+
   margin-top: 3rem;
 }
 
@@ -505,8 +510,56 @@ About
 Services
 ===============
 */
-/* small screen layout setup */
 /* bg-grey in globals */
+.service {
+  background: var(--clr-white);
+  padding: 3rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.service .underline {
+  width: 3rem;
+  height: 0.12rem;
+  transition: var(--transition);
+}
+
+.service p {
+  transition: var(--transition);
+}
+
+.service:hover {
+  background: var(--clr-primary-5);
+  color: var(--clr-white);
+}
+
+.service:hover .underline {
+  background: var(--clr-white);
+}
+.service:hover p {
+  color: var(--clr-white);
+}
+
+@media screen and (min-width: 676px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 /*
 =============== 
