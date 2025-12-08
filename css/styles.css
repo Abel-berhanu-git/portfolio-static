@@ -680,12 +680,145 @@ Projects
 Connect
 ===============
 */
+.connect {
+  position: relative;
+  min-height: 40vh;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+}
 
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.connect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-white);
+  /* background: rgba(0, 0, 0, 1); */
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.connect {
+  display: grid;
+  place-items: center;
+}
+
+.video-banner .section-title {
+  margin-bottom: 2rem;
+}
+
+.video-text {
+  max-width: 30rem;
+}
+
+.video-banner {
+  background: var(--clr-primary-10);
+  padding: 3rem 3rem 12rem 3rem;
+  text-align: center;
+  clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 75%,
+    75% 75%,
+    75% 100%,
+    50% 75%,
+    0% 75%
+  );
+}
+
+.connect {
+  clip-path: polygon(50% 0%, 100% 10%, 100% 90%, 50% 100%, 0 90%, 0 10%);
+}
 /*
 =============== 
 Skills
 ===============
 */
+.skills {
+  background: var(--clr-primary-8);
+}
+
+.skills h3 {
+  color: var(--clr-primary-2);
+  margin: 1.5rem 0;
+}
+
+.skill {
+  margin-bottom: 1.25rem;
+}
+
+.skill p {
+  color: var(--clr-primary-2);
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.skill-container {
+  position: relative;
+  width: 100%;
+  height: 1rem;
+  background: var(--clr-white);
+  border-radius: var(--radius);
+}
+
+.skill-value {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--clr-primary-5);
+  border-radius: var(--radius);
+  transition: width 3s ease-in-out;
+}
+
+.visible-value .value-50 {
+  width: 50%;
+}
+
+.visible-value .value-70 {
+  width: 70%;
+}
+
+.visible-value .value-90 {
+  width: 90%;
+}
+
+.skill-text {
+  position: absolute;
+  top: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.skill-text-70 {
+  left: 70%;
+}
+
+.skill-text-90 {
+  left: 90%;
+}
+
+@media screen and (min-width: 676px) {
+  .skills-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
 /*
 =============== 
 Timeline
