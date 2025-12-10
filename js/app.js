@@ -39,11 +39,11 @@ const observerCallback = (entries, observer) => {
           skillsSection.classList.add('visible-value')
 
           // Stop observing after the animation has been triggered once (saves resources)
-          observer.unobserve(skillsSection)
+          // observer.unobserve(skillsSection)
         } else {
           // Remove the class -> CSS shrinks the bars back to 0%
           // This resets them so they can animate again next time!
-          // skillsSection.classList.remove('visible-value')
+          skillsSection.classList.remove('visible-value')
         }
     });
 }
@@ -59,4 +59,4 @@ if (skillsSection) {
 
 
 // set year
-date.innerHTML = new Date().getFullYear
+date.innerHTML = new Date().getFullYear()

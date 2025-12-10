@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abe Berhanu || projects</title>
+    <title>Abe Berhanu || Home</title>
 
     <!-- font-awesome link icon -->
     <link
@@ -108,83 +108,21 @@
     <!-- ############## -->
     <!-- ############## -->
 
-    <header class="projects-hero">
+    <section class="section single-page">
       <!-- section title -->
       <div class="section-title">
-        <h2>my projects</h2>
+        <h2>contact</h2>
         <div class="underline"></div>
       </div>
       <!--end of section title -->
-    </header>
-
-    <section class="section">
-      <div class="section-center projects-page-center">
-        <!-- single project -->
-        <article class="project-page-card">
-          <!-- image container -->
-          <div class="project-page-img-container">
-            <a href="https://coffee-zone-et.netlify.app/" target="_blank">
-              <img
-                src="./images/project-1.jpg"
-                class="project-page-photo"
-                alt="project img"
-              />
-              <i class="fa-solid fa-home project-page-icon"></i>
-            </a>
-          </div>
-
-          <!-- project info -->
-          <div class="project-page-info">
-            <h4>coffee zone</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              debitis ex sit, nobis dolorem excepturi et harum aliquam nihil
-              iusto voluptatem nesciunt.
-            </p>
-          </div>
-          <!-- project footer -->
-          <div class="project-page-footer">
-            <i class="fa-brands fa-github"></i>
-            <a href="https://github.com/Abel-berhanu-git" target="_blank"
-              >source code</a
-            >
-          </div>
-        </article>
-        <!-- end of single project -->
-
-        <!-- single project -->
-        <article class="project-page-card">
-          <!-- image container -->
-          <div class="project-page-img-container">
-            <a href="https://ethiotours.netlify.app/" target="_blank">
-              <img
-                src="./images/project-2.jpg"
-                class="project-page-photo"
-                alt="project img"
-              />
-              <i class="fa-solid fa-home project-page-icon"></i>
-            </a>
-          </div>
-
-          <!-- project info -->
-          <div class="project-page-info">
-            <h4>coffee zone</h4>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              debitis ex sit, nobis dolorem excepturi et harum aliquam nihil
-              iusto voluptatem nesciunt minima aut libero!. Lorem ipsum dolor
-              sit amet consectetur adipisicing.
-            </p>
-          </div>
-          <!-- project footer -->
-          <div class="project-page-footer">
-            <i class="fa-brands fa-github"></i>
-            <a href="https://github.com/Abel-berhanu-git" target="_blank"
-              >source code</a
-            >
-          </div>
-        </article>
-        <!-- end of single project -->
+      <div class="section-center page-info">
+        <!-- contact page -->
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quam
+          aperiam reprehenderit fugiat sequi. Aperiam ab nobis optio delectus
+          temporibus repudiandae quisquam. Repellat excepturi eius porro vel.
+          Reiciendis, harum obcaecati?
+        </p>
       </div>
     </section>
 
